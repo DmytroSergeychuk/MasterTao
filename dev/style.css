@@ -12,10 +12,32 @@ Tags: custom-colors, custom-header, custom-menu, custom-logo, editor-style, feat
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-@import "sass/variables.scss";
-@import "sass/fonts.scss";
-@import "sass/header.scss";
-@import "sass/markap.scss";
-@import "sass/first-screen.scss";
-@import "sass/footer.scss";
-@import "sass/media/media.scss";
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+header {
+  height: 7vh;
+  padding: 15px 0;
+  background: #222;
+}
+header a {
+  color: #fff;
+}
+
+h1 {
+  background-color: blue;
+}
+
+h1 {
+  color: blue;
+}
+
+footer {
+  height: 100px;
+  background: #f00;
+  margin-top: auto;
+}/*# sourceMappingURL=style.css.map */
