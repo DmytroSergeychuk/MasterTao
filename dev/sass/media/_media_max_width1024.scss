@@ -1,4 +1,58 @@
 @media screen and (max-width: 1024px) {
-}
+    
 
+    .container {
+        max-width: 100%;
+    }
+    .header__nav {
+        height: 72px;
+        align-items: center;
+        padding: 0px 16px;
+    }
+    
+
+    .header__logo {
+        max-width: 136px;
+        height: 36px;
+    }
+    .mobile-container {
+        display: none;
+
+        &.show {
+            display: flex;
+            margin: 0px;
+            padding: 41px 0px 60px 0px;
+            transition: 0.3s;
+            // overflow: hidden;
+            width: 100%;
+            flex-direction: column;
+            position: absolute;
+            z-index: 1;
+            top: 72px;
+            left: 0px;
+            background-color: var(--colorDarkGreyTwo);
+        }
+    }
+    .show .header__nav__link-block {
+        display: flex;
+        flex-direction: column;
+        & a {
+
+        }
+    }
+    
+    .show .header__nav__link-block a {
+        line-height: 222%;
+        font-size: 24px;
+    text-align: center;
+    &:hover {
+        color: var(--colorButton);
+    }
+    }
+    
+    .show .btn-small {
+        width: 295px;
+        height: 68px;
+    }
+}
 

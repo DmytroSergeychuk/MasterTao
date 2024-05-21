@@ -1,2 +1,14 @@
 @media screen and (max-width: 1199px) {
+  
+    .mobile-container {
+        gap: 10px;
+    }
+
+    .header__nav__link-block {
+        gap: 20px;
+    }
+    .nav__link-block {
+        gap: 0px;
+    }
+    
 }

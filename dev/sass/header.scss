@@ -1,8 +1,48 @@
-header{
-	height: 7vh;
-	padding: 15px 0;
-	background: #222;
-	a {
-		color: #fff;
-	}
+.header__nav {
+    padding: 25px 12px 39px 12px;
+    flex-wrap: nowrap;
+    position: relative;
 }
+
+.mobile-container {
+    gap: 98px;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.header__nav__link-block {
+    gap: 30px;
+
+    a {
+        text-decoration: none;
+        color: var(--colorText);
+    }
+}
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+    position: absolute;
+    width: 28px;
+    height: 3px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: var(--colorText);
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+    background-color: #fff;
+}
+
+.hamburger-box {
+    width: 28px;
+}
+
+.hamburger {
+    padding: 10px;
+}
+

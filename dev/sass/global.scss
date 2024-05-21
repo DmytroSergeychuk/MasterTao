@@ -1,0 +1,287 @@
+:root {
+    --colorText: #fff;
+    --colorButton: #E58D35;
+    --colorGreen: #89C249;
+    --colorDarkGrey: #282B38;
+    --colorDarkGreyTwo: #363A4D;
+}
+
+body {
+    font-family: "Proxima Nova", sans-serif;
+    background-color: #282B38;
+    color: var(--colorText);
+    font-weight: 400;
+    line-height: 24px;
+}
+::selection {
+    background-color: var(--colorGreen);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+p,
+i,
+b,
+li,
+a {
+    font-size: 16px;
+}
+
+h1, .h1 {
+    font-size: 56px;
+}
+
+h2, .h2 {
+    font-size: 36px;
+}
+
+h3, .h3 {
+    font-size: 24px;
+}
+
+h4, .h4 {
+    font-size: 22px;
+}
+
+h5, .h5 {
+    font-size: 20px;
+}
+
+h6, .h6 {
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.fw-300 {
+font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+label {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    padding-left: 33px;
+
+    &:before,
+    &:after {
+        position: absolute;
+        content: "";
+        height: 24px;
+        width: 24px;
+    }
+}
+.check-button {
+    position: relative;
+}
+[type=checkbox]+label::before {
+    background-color: var(--colorText);
+    border-radius: 4px;
+    border: solid 1px var(--colorDarkGrey);
+}
+
+[type=radio] + label::before {
+    background-color: var(--colorText);
+    border-radius: 50%;
+    border: solid 1px var(--colorDarkGrey);
+}
+
+
+
+[type=checkbox]+label::before,
+[type=radio] + label::before {
+left: -4px;
+}
+
+[type=radio]:checked + label::after {
+    background-color: var(--colorText);
+    width: 10px;
+    height: 10px;
+    left: 3px;
+    top: 8px;
+    content: "";
+    position: absolute;
+    background-color: var(--colorDarkGrey);
+    border-radius: 50%;
+    border: solid 1px var(--colorDarkGrey);
+}
+
+[type=checkbox]:checked + label::after {
+    background: url('assets/img/check-mark.svg') center/contain no-repeat;
+    width: 12px;
+    height: 12px;
+    left: 2px;
+    top: 7px;
+    content: "";
+    position: absolute;
+}
+
+input {
+    display: none;
+}
+
+li {
+
+    padding-left: 10px;
+
+    &::marker {
+        color: var(--colorGreen);
+        font-weight: 700;
+        font-size: 17px;
+    }
+}
+
+ul li {
+    list-style: none;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: var(--colorGreen);
+        width: 8px;
+        height: 8px;
+        top: 8px;
+        left: -12px;
+        border-radius: 50%;
+    }
+}
+
+a {
+    color: var(--colorButton);
+}
+
+
+
+
+.btn {
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: var(--colorGreen);
+        border: solid 1px var(--colorGreen);
+        box-shadow: none;
+    }
+
+}
+
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 20px 34px;
+    border-color: var(--colorButton);
+    cursor: pointer;
+    border-radius: 90px;
+
+}
+
+.btn-primary {
+    background-color: var(--colorButton);
+}
+
+.btn-secondary {
+    background-color: transparent;
+}
+
+.btn-small {
+    padding: 13px 17px;
+    font-size: 15px;
+}
+
+.btn-with-icon {
+    padding-right: 74px;
+    position: relative;
+
+    &::after {
+        width: 27px;
+        height: 27px;
+        right: 16px;
+        content: "";
+        position: absolute;
+        background: url('assets/img/icon-arrow-1.svg') center/contain no-repeat;
+    }
+}
+
+.btn-with-icon::after:hover {
+    background: url('assets/img/icon-arrow-2.svg') center/contain no-repeat;
+
+}
+
+.scroll {
+    overflow-y: scroll;
+    height: 300px;
+    padding: 0px 15px 0px 0px;
+    scrollbar-color: var(--colorButton) var(--colorText);
+}
+
+
+.hamburder__block {
+    width: 28px;
+    height: 24px;
+}
+
+.hamburger__button{
+    width: 28px;
+    height: 3px;
+    background-color: var(--colorText);
+    border: none;
+    position: relative;
+    top: -6px;
+
+&::after, &::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 28px;
+    height: 3px;
+    top: -10px;
+    left: 0px;
+    background-color: var(--colorText);
+    pointer-events: none;
+}
+}
+
+.hamburger__button::after {
+    top:11px;
+    left: 0px;
+}
+

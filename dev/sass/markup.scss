@@ -1,0 +1,33 @@
+.color-item {
+   text-decoration: none; 
+   height: 150px;
+   margin-bottom: 24px;
+   list-style-type: none;
+   padding-left: 0px;
+}
+
+ul {
+    .color-item {
+            &::before {
+                display: none;
+            }
+
+    }
+}
+
+.color-item-1 {
+background-color: var(--colorButton);
+}
+
+.color-item-2 {
+   background-color: var(--colorGreen); 
+}
+
+.color-item-3 {
+    background-color: var(--colorDarkGrey);
+    border: 1px solid var(--colorText);
+}
+
+.color-item-4 {
+    background-color: var(--colorDarkGreyTwo);
+}

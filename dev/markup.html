@@ -1,29 +1,39 @@
 @@include('templates/head.html')
+@@include('templates/header.html')
 <header></header>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="markap__color-block">
-                <h4 class="markap__title">1. colors</h4>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+<main class="markap-page">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="markap__color-block">
+                    <h4 class="markap__title">1. colors</h4>
+                    <ul>
+                        <li class="color-item color-item-1"></li>
+                        <li class="color-item color-item-2"></li>
+                        <li class="color-item color-item-3"></li>
+                        <li class="color-item color-item-4"></li>
+                    </ul>
+                </div>
             </div>
+
             <div class="col-md-4">
                 <div class="markap__text-block">
-                    <h4 class="markap__title">2. Колір тексту, шрифт bold, шрифт italik, посилання в тексті, ::selection
+                    <h4 class="markap__title">2. Колір тексту, шрифт bold, шрифт italik, посилання в тексті,
+                        ::selection
                     </h4>
                     <p>
-                        <a href="">totam nostrum?</a><b>Culpa tenetur perspiciatis quibusdam maxime nostrum?</b><i>Lorem
-                            ipsum dolor sit amet,consectetur adipisicing elit.</i> Praesentium, non quae in error modi
+                        <a href="">totam nostrum?</a><b>Culpa tenetur perspiciatis quibusdam maxime
+                            nostrum?</b><i>Lorem
+                            ipsum dolor sit amet,consectetur adipisicing elit.</i> Praesentium, non quae in error
+                        modi
                         consectetur eaque fuga
-                        reiciendis один з видів енергії, що використовується практично на кожному підприємстві, завдяки
+                        reiciendis один з видів енергії, що використовується практично на кожному підприємстві,
+                        завдяки
                         Dolores cum tempore quos eius vero pariatur exercitationem, totam sit mollitia ex ab neque
                         expedita, magni ipsum consequatur maxime magnam consequuntur similique sed deserunt nemo
-                        quisquam? Vel numquam ipsum asperiores dignissimos reprehenderit enim rem error voluptatem, nisi
+                        quisquam? Vel numquam ipsum asperiores dignissimos reprehenderit enim rem error voluptatem,
+                        nisi
                         magnam dolores?
                     </p>
                 </div>
@@ -33,11 +43,22 @@
                     <h4 class="markap__title">3. Нумерований список</h4>
                     <ol>
                         <li>Lorem, ipsum dolor.</li>
-                        <li>Lorem, <a>ipsum dolor.</a></li>
+                        <li>Lorem, <a href="#">ipsum dolor.</a></li>
                         <li>Lorem, ipsum dolor.</li>
                         <li>Lorem, ipsum dolor.</li>
                         <li>Lorem, ipsum dolor.</li>
                     </ol>
+                    <div class="hamburder d-flex gap-1">
+                        <div class="hamburger__block">
+                            <button class="hamburger__button"></button>
+                        </div>
+                        <div class="hamburger__block">
+                            <button class="hamburger__button"></button>
+                        </div>
+                        <div class="hamburger__block">
+                            <button class="hamburger__button"></button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-4">
@@ -61,14 +82,16 @@
             <div class="col-md-4">
                 <h4 class="markap__title">6. Font-weight</h4>
                 <ol>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident asperiores doloremque
+                    <li class="fw-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident asperiores
+                        doloremque
                         dignissimos veritatis itaque?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident asperiores doloremque
+                    <li class="fw-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident asperiores
+                        doloremque
                         dignissimos veritatis itaque?</li>
-                    <li><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident asperiores
-                            doloremque dignissimos veritatis itaque?</span></li>
-                    <li><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident asperiores
-                            doloremque dignissimos veritatis itaque?</span></li>
+                    <li class="fw-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident asperiores
+                            doloremque dignissimos veritatis itaque?</li>
+                    <li class="fw-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident asperiores
+                            doloremque dignissimos veritatis itaque?</li>
                 </ol>
             </div>
 
@@ -128,38 +151,50 @@
 
             <div class="col-md-4">
                 <h4 class="markap__title">10. button</h4>
-                <button type="button" class="btn btn-primary">Залишити заявку</button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-primary btn-small">Залишити заявку</button>
+                <button type="button" class="btn btn-secondary btn-small">Secondary</button>
                 <button type="button" class="btn btn-primary btn-lg">Залишити заявку</button>
                 <button type="button" class="btn btn-secondary btn-lg">Відправити запит</button>
-                <button type="button" class="btn btn-primary btn-lg">Розрахувати вартість</button>
-                <button type="button" class="btn btn-primary btn-lg">Наступний крок</button>
-                <button type="button" class="btn btn-primary btn-lg">Оформити вантаж</button>
+                <button type="button" class="btn btn-primary btn-lg btn-with-icon">Розрахувати вартість</button>
+                <button type="button" class="btn btn-primary btn-lg btn-with-icon">Наступний крок</button>
+                <button type="button" class="btn btn-primary btn-lg btn-with-icon">Оформити вантаж</button>
             </div>
 
             <div class="col-md-4">
                 <h4 class="markap__title">11. button</h4>
                 <div class="scroll">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi dolorum earum facilis alias
-                    reprehenderit aliquid ab consequatur deserunt laudantium aliquam quia veniam necessitatibus mollitia
+                    reprehenderit aliquid ab consequatur deserunt laudantium aliquam quia veniam necessitatibus
+                    mollitia
                     fuga maiores nisi quod, iure dignissimos rem porro adipisci excepturi voluptate beatae. Facilis,
-                    voluptatum! Culpa, modi vero incidunt eligendi dolor explicabo laudantium cupiditate, consequatur
-                    iste quia odio blanditiis recusandae nobis laborum asperiores tenetur quae neque! Rem ad accusantium
-                    accusamus corporis in odit maxime. Voluptate expedita culpa nulla. Suscipit nostrum impedit repellat
+                    voluptatum! Culpa, modi vero incidunt eligendi dolor explicabo laudantium cupiditate,
+                    consequatur
+                    iste quia odio blanditiis recusandae nobis laborum asperiores tenetur quae neque! Rem ad
+                    accusantium
+                    accusamus corporis in odit maxime. Voluptate expedita culpa nulla. Suscipit nostrum impedit
+                    repellat
                     reiciendis, eum id saepe aut ipsum assumenda quo omnis excepturi in optio porro placeat ab
-                    blanditiis quam tempora. Animi fugit, tempore, iusto quibusdam soluta dolore in eligendi obcaecati
+                    blanditiis quam tempora. Animi fugit, tempore, iusto quibusdam soluta dolore in eligendi
+                    obcaecati
                     labore molestias, ullam corrupti sunt hic voluptatum eveniet? Quos cum, totam illum natus facere
-                    ipsam perspiciatis vitae error sit assumenda ab vel esse corporis dolores fugit dolorem repellendus
-                    ad architecto mollitia labore tenetur. Sequi, aut! Error a voluptatum accusamus quam quaerat nam non
+                    ipsam perspiciatis vitae error sit assumenda ab vel esse corporis dolores fugit dolorem
+                    repellendus
+                    ad architecto mollitia labore tenetur. Sequi, aut! Error a voluptatum accusamus quam quaerat nam
+                    non
                     saepe aspernatur! Distinctio sapiente perferendis quod accusantium laudantium est adipisci
                     voluptates. Quod magnam sed enim maiores! Doloribus consequatur ipsam ea officiis omnis commodi
-                    dicta alias aspernatur, est laboriosam reprehenderit rerum, pariatur tenetur sed. Quas dolorum quasi
+                    dicta alias aspernatur, est laboriosam reprehenderit rerum, pariatur tenetur sed. Quas dolorum
+                    quasi
                     fugiat laudantium optio non officia deserunt autem ex eligendi nesciunt ipsa at atque, doloribus
                     veritatis dolorem voluptas tenetur quia nam nisi? Laudantium enim rem eveniet adipisci fugiat
-                    similique odio fuga in, hic porro perspiciatis et id quae architecto quo cum nisi facere. Asperiores
-                    temporibus ipsam ab aliquid, repellat ea, commodi veniam, amet repellendus fugit iure! Voluptas vel
-                    sint eum maxime aperiam nihil officiis autem. Dolor temporibus dignissimos ipsum molestias id harum
-                    magni fuga quis voluptates accusantium cumque nulla perspiciatis recusandae mollitia nihil quo ipsa,
+                    similique odio fuga in, hic porro perspiciatis et id quae architecto quo cum nisi facere.
+                    Asperiores
+                    temporibus ipsam ab aliquid, repellat ea, commodi veniam, amet repellendus fugit iure! Voluptas
+                    vel
+                    sint eum maxime aperiam nihil officiis autem. Dolor temporibus dignissimos ipsum molestias id
+                    harum
+                    magni fuga quis voluptates accusantium cumque nulla perspiciatis recusandae mollitia nihil quo
+                    ipsa,
                     quisquam, repellendus est maxime accusamus? Dolorem consequuntur iure nihil ex praesentium error
                     illo, impedit nisi neque tempora modi dolores cum aspernatur odit quasi commodi itaque delectus?
                     Quibusdam enim officiis eveniet possimus quisquam modi distinctio?
@@ -168,11 +203,15 @@
 
             <div class="col-md-4">
                 <h4 class="markap__title">12. Fancybox</h4>
-
+                <a data-fancybox="gallery" href="https://lipsum.app/id/61/1600x1200">
+                    <img class="rounded" src="https://lipsum.app/id/61/300x250" />
+                  </a>
             </div>
 
 
         </div>
     </div>
-</div>
+    </div>
+</main>
+
 @@include('templates/footer.html')
