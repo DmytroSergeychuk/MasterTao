@@ -1,14 +1,14 @@
-@media screen and (max-width: 991.99px) {
+@media screen and (max-width: 1024.99px) {
 
     .header__nav {
-        height: 72px;
         align-items: center;
+        padding: 19px 15px 39px 15px;
+
     }
 
 
     .header__logo {
         max-width: 136px;
-        height: 36px;
     }
 
     .mobile-container {
@@ -32,7 +32,7 @@
     .show .header__nav__link-block {
         display: flex;
         flex-direction: column;
-        & a {}
+        margin-bottom: 34px;
     }
 
     .show .header__nav__link-block a {
@@ -48,7 +48,7 @@
     .show .btn-small {
         width: 295px;
         height: 68px;
-margin: 0 auto;
+        margin: 0 auto;
 
     }
 }
