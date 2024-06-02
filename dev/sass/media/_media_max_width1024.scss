@@ -1,12 +1,8 @@
 @media screen and (max-width: 1024.99px) {
-
     .header__nav {
         align-items: center;
-        padding: 19px 15px 39px 15px;
-
+        padding: 17px 14px 15px 20px;
     }
-
-
     .header__logo {
         max-width: 136px;
     }
@@ -22,10 +18,16 @@
             width: 100%;
             flex-direction: column;
             position: absolute;
-            z-index: 1;
-            top: 72px;
+            top: 71px;
             left: 0px;
             background-color: var(--colorDarkGreyTwo);
+
+            .btn-small {
+                width: 295px;
+                height: 68px;
+                margin: 0 auto;
+
+            }
         }
     }
 
@@ -33,22 +35,82 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 34px;
-    }
 
-    .show .header__nav__link-block a {
-        line-height: 222%;
-        font-size: 24px;
-        text-align: center;
+        a {
+            line-height: 222%;
+            font-size: 24px;
+            text-align: center;
 
-        &:hover {
-            color: var(--colorButton);
+            &:hover {
+                color: var(--colorButton);
+            }
         }
     }
 
-    .show .btn-small {
-        width: 295px;
-        height: 68px;
-        margin: 0 auto;
+    .swiper-info {
+        padding: 0;
+        position: relative;
 
+        .swiper-wrapper .swiper-slide {
+            min-height: calc(100vh - 72px);
+            border-radius: 0px;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #040511;
+                opacity: 0.6;
+            }
+
+            .container {
+                padding: 0px 40px;
+
+                .swiper-info__banner {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 0;
+
+                    .swiper-info__banner__title {
+                        font-size: 32px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                    }
+
+                    .swiper-info__banner__description {
+                        margin-bottom: 18px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
-}
+    .section__block {
+        margin: 0px 0px 95px 0px;
+        &:nth-child(2n) {
+            border-radius: 0px;
+        }
+    }
+  
+    }
+    body.overflow-hidden {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #282b3869 60%;
+            backdrop-filter: blur(4px); 
+        }
+    }
+ 

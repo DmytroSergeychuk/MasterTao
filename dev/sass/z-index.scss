@@ -1,0 +1,6 @@
+.header__nav {z-index: 20;}
+body.overflow-hidden::before {z-index: 11;}
+@media screen and (max-width: 1024.99px) {
+.mobile-container.show                              {z-index: 11;}
+.swiper-info .swiper-wrapper .swiper-slide::after     {z-index: -1;}
+}

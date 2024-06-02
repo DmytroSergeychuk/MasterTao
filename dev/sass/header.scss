@@ -10,7 +10,6 @@
 
 .mobile-container {
 width: 100%;
-
 }
 
 .header__nav__link-block {
@@ -19,7 +18,7 @@ width: 100%;
     margin: 0 auto;
     a {
         text-decoration: none;
-        color: var(--colorText);
+        color: var(--colorWhite);
         line-height: 146%;
     }
 }
@@ -34,13 +33,13 @@ width: 100%;
     transition-duration: .15s;
     transition-property: transform;
     border-radius: 4px;
-    background-color: var(--colorText);
+    background-color: var(--colorWhite);
 }
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner:after,
 .hamburger.is-active .hamburger-inner:before {
-    background-color: #fff;
+    background-color: var(--colorWhite);
 }
 
 .hamburger-box {
