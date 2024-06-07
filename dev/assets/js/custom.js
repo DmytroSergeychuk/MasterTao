@@ -50,3 +50,11 @@ const swiper = new Swiper('.swiper-info', {
 
 });
 
+
+const fileInput = document.querySelector('#product-photos');
+const fileName = document.querySelector('#file-name')
+
+fileInput.addEventListener('change', function() {
+  fileName.innerHTML = fileInput.files[0].name;
+});
+

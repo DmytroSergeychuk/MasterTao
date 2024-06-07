@@ -1,4 +1,10 @@
 @media (min-width: 1025px) {
 
+    .section__title.text-lg-start {
 
+        &::after {
+            left: 0;
+
+        }
+    }
 }
