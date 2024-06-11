@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
   $('.single-item');
   Fancybox.bind('[data-fancybox="gallery"]', {
@@ -38,7 +37,7 @@ const swiper = new Swiper('.swiper-info', {
   },
 
   breakpoints: {
-    992: {
+    1024: {
       spaceBetween: 40,
       navigation: {
         enabled: true,
@@ -51,10 +50,15 @@ const swiper = new Swiper('.swiper-info', {
 });
 
 
-const fileInput = document.querySelector('#product-photos');
-const fileName = document.querySelector('#file-name')
+const fileLabel = document.querySelectorAll('.input-box_label');
+const fileInput = document.querySelectorAll('.input-box_input');
 
-fileInput.addEventListener('change', function() {
-  fileName.innerHTML = fileInput.files[0].name;
-});
 
+fileInput.forEach(item => {
+  item.addEventListener('change', function() {
+    const fileName = item.closest('.input-box').querySelector('.file-name')
+    fileName.innerHTML = item.files[0].name;
+  })
+})
+
+fileLabel.forEach(item => item.closest('.form__row').previousElementSibling.classList.add('special_gap'))
