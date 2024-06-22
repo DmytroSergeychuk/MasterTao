@@ -1,9 +1,10 @@
-@media screen and (max-width: 1199px) {
-  
+@media screen and (max-width: 1399px) {
+
 
     .header__nav__link-block {
         gap: 20px;
     }
+
     .nav__link-block {
         gap: 0px;
     }
@@ -11,5 +12,17 @@
     .swiper-info .swiper-wrapper .swiper-slide .container {
         padding: 0px 50px;
     }
+
+    .calculation__img {
+        width: 35.167vw;
+    }
+
+    .swiper-template {
+        max-width: 925px;
+        margin: 0 auto;
+    }
+
+
+
 
 }

@@ -1,3 +1,39 @@
 @media screen and (max-width: 575px) {
-    
+
+    .swiper-template {
+        width: 335px;
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+
+                .template__card {
+                    text-align: center;
+
+                    .template__img_box {
+                        min-height: 229px;
+                        margin-bottom: 27px;
+                        border-radius: 20px;
+
+
+                        img {
+                            max-width: 335px;
+                            margin-top: -8px;
+                        }
+
+                    }
+
+                    .template__buttons {
+                        gap: 10px;
+
+                        .btn {
+                            padding: 14px 7px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
 }

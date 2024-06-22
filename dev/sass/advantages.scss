@@ -1,0 +1,32 @@
+.advantage {
+    text-align: center;
+    max-width: 263px;
+    margin: 10px auto 0px;
+
+    .advantage__img_box {
+        border-radius: 50%;
+        background-color: var(--colorGreen);
+        width: 93px;
+        height: 93px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 32px;
+        outline: 1px #6C7188 solid;
+        outline-offset: 9px;
+    }
+    .advantage__title {
+        min-height: 66px;
+        margin: 0px;
+    }
+}
+
+.swiper-advantages {
+    .swiper-pagination {
+        bottom: -30px;
+    }
+}
+
+
+
+

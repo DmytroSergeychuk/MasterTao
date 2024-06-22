@@ -1,27 +1,42 @@
-.swiper-info {
+.swiper-initialized {
     overflow: hidden;
+    position: relative;
+}
+
+.swiper-info {
     max-width: 1860px;
     margin: 0 auto;
-    position: relative;
     padding: 0px 20px;
 
-    .swiper-wrapper .swiper-slide {
-        min-height: 700px;
-        border-radius: 20px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0 auto;
+    .swiper-wrapper {
+        .swiper-slide {
+            min-height: 700px;
+            border-radius: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 auto;
+            .container {
+                .swiper-info__banner {
+                    .swiper-info__banner__title {
+                        margin-bottom: 10px;
+                    }
+                }
 
-        .container {
-            padding: 0 15px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
         }
+
+    }
+
+    .swiper-pagination {
+        margin-bottom: 34px;
     }
 
 }
 
-.swiper-info:last-child .container .swiper-info__banner .swiper-info__banner__title {
-    margin-bottom: 100px;
-}
 
 .swiper-pagination {
     margin-bottom: 35px;

@@ -1,4 +1,12 @@
 
+.calculation__img {
+    position: absolute;
+    bottom: -114px;
+    left: 606px;
+    width: 29.167vw;
+    max-width: 560px;
+}
+
 .calucation__form {
     padding: 50px 50px 61px;
     max-width: 626px;
@@ -6,6 +14,7 @@
     border-radius: 20px;
     background-color: var(--colorDarkGreyTwo);
     margin-bottom: 114px;
+    box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.30);
 }
 
 

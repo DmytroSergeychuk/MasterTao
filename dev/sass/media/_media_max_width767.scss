@@ -1,7 +1,6 @@
 @media screen and (max-width: 767px) {
     .container {
         margin: 0px;
-        max-width: 100%;
     }
 
     h1,
@@ -21,10 +20,13 @@
         gap: 0px;
     }
 
-    .calucation__form {
-        padding: 52px 30px 34px;
-        min-height: 846px;
-        border-radius: 20px;
+    .calculation__block {
+        .calucation__form {
+            padding: 52px 30px 34px;
+            min-height: 846px;
+            border-radius: 20px;
+            width: 100%;
+        }
     }
 
     .variation-box {
@@ -39,8 +41,10 @@
         .btn-with-icon {
             width: 100%;
         }
+
         .input-box_label {
             margin-bottom: 0px;
         }
     }
+
 }

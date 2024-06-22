@@ -7,4 +7,17 @@
 
         }
     }
+
+    .swiper-advantages {
+        .swiper-wrapper {
+            flex-wrap: wrap;
+            gap: 26px 0px;
+        }
+        .swiper-slide {
+            max-width: 25%;
+        }
+        .swiper-pagination {
+            display: none;
+        }
+    }
 }
